@@ -124,7 +124,7 @@ spans.forEach(span => {
         if (hasMoved) return;
 
         const seconds = parseInt(span.dataset.seconds);
-        window.location.href = `/cooldown.html?seconds=${seconds}`;
+        window.location.href = `/FastTimer-GO/cooldown.html?seconds=${seconds}`;
     });
 });
 
