@@ -1,16 +1,16 @@
 const staticCacheName = 'fasttimer-static-v1';
  const assets = [
-    "/",
-    "/index.html",
+    "/FastTimer-GO/",
+    "/FastTimer-GO/index.html",
     "/cooldown.html",
-    "/assets/script.js",
-    "/assets/cooldown.js",
-    "/assets/style.css",
-    "/assets/cooldown.css",
-    "/assets/icons/icon-72x72.png",
-    "/assets/icons/icon-96x96.png",
-    "/assets/icon-192.png",
-    "/assets/icon-512.png",
+    "/FastTimer-GO/assets/script.js",
+    "/FastTimer-GO/assets/cooldown.js",
+    "/FastTimer-GO/assets/style.css",
+    "/FastTimer-GO/assets/cooldown.css",
+    "/FastTimer-GO/assets/icons/icon-72x72.png",
+    "/FastTimer-GO/assets/icons/icon-96x96.png",
+    "/FastTimer-GO/assets/icon-192.png",
+    "/FastTimer-GO/assets/icon-512.png",
 ];
 
 self.addEventListener('install', installEvent => {
