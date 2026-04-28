@@ -118,3 +118,12 @@ function setTheme(n) {
 // restaure le thème au chargement
 const savedTheme = parseInt(localStorage.getItem('theme')) || 0;
 setTheme(savedTheme);
+
+spans.forEach(span => {
+    span.addEventListener('click', () => {
+        if (hasMoved) return;
+
+        const seconds = parseInt(span.dataset.seconds);
+        window.location.href = `/cooldown.html?seconds=${seconds}`;
+    });
+});
