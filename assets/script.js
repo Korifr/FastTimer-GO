@@ -127,3 +127,12 @@ spans.forEach(span => {
         window.location.href = `/cooldown.html?seconds=${seconds}`;
     });
 });
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+        this.navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .the (res => console.log("Service Worker registered"))
+            .catch(err => console.log("Service Worker registration failed:", err));
+    });
+}
