@@ -124,14 +124,14 @@ spans.forEach(span => {
         if (hasMoved) return;
 
         const seconds = parseInt(span.dataset.seconds);
-        window.location.href = `/FastTimer-GO/cooldown.html?seconds=${seconds}`;
+        window.location.href = `./cooldown.html?seconds=${seconds}`;
     });
 });
 
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
-        this.navigator.serviceWorker
-            .register("/serviceWorker.js")
+        navigator.serviceWorker
+            .register("./serviceWorker.js")
             .the (res => console.log("Service Worker registered"))
             .catch(err => console.log("Service Worker registration failed:", err));
     });
