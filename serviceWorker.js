@@ -2,7 +2,7 @@ const staticCacheName = 'fasttimer-static-v1';
  const assets = [
     "/FastTimer-GO/",
     "/FastTimer-GO/index.html",
-    "/cooldown.html",
+    "/FastTimer-GO/cooldown.html",
     "/FastTimer-GO/assets/script.js",
     "/FastTimer-GO/assets/cooldown.js",
     "/FastTimer-GO/assets/style.css",
