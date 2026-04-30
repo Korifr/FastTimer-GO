@@ -28,15 +28,18 @@ function tick() {
     display.textContent = formatTime(remaining);
     updateFill();
 
+    console.log('navigator.vibrate disponible ?', !!navigator.vibrate);
+
     if (remaining <= 0) {
         clearInterval(interval);
         controls.style.visibility = 'visible';
-        if (navigator.vibrate) navigator.vibrate[(500, 200, 500)];
+        if (navigator.vibrate) navigator.vibrate([500, 200, 500]);
     }
 }
+console.log(navigator.vibrate);
 
 function goBack() {
-    window.location.href = '/';
+    window.location.href = '/FastTimer-GO/';
 }
 
 function restart() {
